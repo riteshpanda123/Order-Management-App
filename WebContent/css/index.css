@@ -1,0 +1,217 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f0f0f0;
+}
+
+.hero-container {
+  background-color: white;
+  height: 80%;
+  width: 80%;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px 5px rgba(216, 216, 216, 0.5),
+    -2px -2px 10px 2px rgba(216, 216, 216, 0.2);
+  position: relative;
+}
+
+.header {
+  height: 5%;
+}
+
+.hrc-logo {
+  width: 160px;
+  position: absolute;
+  top: 25px;
+  left: 35px;
+}
+
+.hrc-bg {
+  width: 100%;
+  transform: rotateY(180deg);
+}
+
+.hero-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 40%;
+  background-color: #8fd163;
+  border-radius: 0 10px 10px 0;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.hero-title h2 {
+  font-size: 1.5vw;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.hero-content {
+  position: absolute;
+  top: 40%;
+  right: 15%;
+  padding: 8px;
+  height: 300px;
+  width: 25vw;
+}
+
+.form-title {
+  font-size: 1.6vw;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #666666;
+}
+
+form {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.label {
+  margin-bottom: 1rem;
+}
+
+.label p {
+  font-size: 0.95vw;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: #666666;
+}
+
+.label input {
+  margin-top: 0.75rem;
+  padding-left: 5px;
+  height: 2.5rem;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #fc7500;
+  background-color: rgba(79, 196, 247, 0.1);
+  font-size: 1.1em;
+  letter-spacing: 0.9px;
+  font-weight: 700;
+  color: #666666;
+}
+
+.label input:focus {
+  outline: none;
+}
+
+.btn {
+  font-size: 1em;
+  font-weight: 700;
+  color: white;
+  background-color: #666666a1;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 2.5rem;
+  margin-top: 1.5rem;
+  float: right;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 1400px) {
+  .hero-title {
+    margin-top: 32px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .hero-title {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .hero-title {
+    margin-top: 48px;
+  }
+  .form-title {
+    font-size: 1.6vw;
+  }
+  .label p {
+    font-size: 1.05vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hero-container {
+    height: 80%;
+    width: 70%;
+  }
+  .hrc-logo {
+    width: 120px;
+  }
+  .hero-title {
+    height: 3.5rem;
+    width: 38%;
+    padding: 5px 0;
+  }
+  .hero-content {
+    top: 30%;
+    right: 10%;
+  }
+  .form-title {
+    font-size: 2vw;
+  }
+  .label p {
+    font-size: 1.25vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .hero-container {
+    height: 80%;
+    width: 60%;
+  }
+  .hrc-logo {
+    width: 140px;
+  }
+  .hrc-bg {
+    display: none;
+  }
+  .hrc-logo {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .hero-title {
+    height: 2.8rem;
+    width: 100%;
+    border-radius: 0;
+    background-color: #8fd163;
+    margin-top: 3rem;
+  }
+  .hero-title h2 {
+    font-weight: 500;
+    font-size: 2.2vw;
+  }
+  .hero-content {
+    height: 45vh;
+    width: 40vw;
+    top: 17.5vw;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
